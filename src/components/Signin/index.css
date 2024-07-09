@@ -1,0 +1,92 @@
+.bg-container {
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg, #333338,  #42311e,#421e1e);
+  font-size: 16px;
+  /* animation: bgAnimation 2000ms linear; */
+}
+
+.logo {
+  /* animation:  logoAnimation infinite 1000ms linear;*/
+  margin: 0px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.sign-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  animation: formAnimation infinite 1000ms linear;
+  backdrop-filter: blur(50px);
+}
+
+.input-field {
+  padding-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.input-border{
+  border-bottom: 1px solid #ffffff;
+}
+
+.input-container{
+  display: flex;
+  gap: 20px;
+}
+
+.hide-button{
+  background-color: transparent;
+  border: none;
+color: #ffffff;
+}
+
+.sign-in-btn {
+  background-color: #4240be;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@keyframes logoAnimation {
+  from {
+    text-shadow: 1px 1px 2px #be5a5a, 1px 1px 5px #61ca84, 1px 1px 5px #cc5835;
+  }
+  to {
+    text-shadow: 1px 1px 2px #0f0000, 1px 1px 5px #033614, 1px 1px 5px #330e02;
+  }
+}
+
+@keyframes formAnimation {
+  from {
+    box-shadow: 1px 1px 5px 5px #b5b5d4;
+  }
+  to {
+    box-shadow: 1px 1px 5px 5px #ffffff;
+  }
+}
+
+@keyframes bgAnimation {
+  from {
+    background-image: repeating-conic-gradient(#705241 10%, #611818 20%);
+  }
+  to {
+    background-image: repeating-conic-gradient(#611818 10%, #705241 20%);
+  }
+}

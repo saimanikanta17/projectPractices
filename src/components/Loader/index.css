@@ -1,0 +1,157 @@
+.bg-container {
+  background-color: #282c34;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: container infinite 3000ms linear;
+  border-radius: 50%;
+  gap: 20px;
+
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px 3px #ffffff;
+  animation: bgAnimation infinite 2000ms linear;
+}
+
+/*.loader-1 {
+  animation-direction: alternate;
+}*/
+
+.loader-2 {
+  animation-direction: reverse;
+}
+
+.loader-3 {
+  animation-direction: alternate;
+}
+
+.loader-4 {
+  animation-direction: alternate-reverse;
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-image: repeating-conic-gradient(
+      at 0% 100%,
+      #af6f49 10%,
+      #af3f3f 20%
+    );
+  }
+  10% {
+    background-image: repeating-conic-gradient(
+      at 10% 90%,
+      #613f18 10%,
+      #547041 20%
+    );
+  }
+  20% {
+    background-image: repeating-conic-gradient(
+      at 20% 80%,
+      #4e7041 10%,
+      #186142 20%
+    );
+  }
+  30% {
+    background-image: repeating-conic-gradient(
+      at 30% 70%,
+      #183861 10%,
+      #614170 20%
+    );
+  }
+  40% {
+    background-image: repeating-conic-gradient(
+      at 40% 60%,
+      #70414f 10%,
+      #401861 20%
+    );
+  }
+  50% {
+    background-image: repeating-conic-gradient(
+      at 50% 50%,
+      #185e61 10%,
+      #41704f 20%
+    );
+  }
+  60% {
+    background-image: repeating-conic-gradient(
+      at 60% 40%,
+      #416170 10%,
+      #2f6118 20%
+    );
+  }
+  70% {
+    background-image: repeating-conic-gradient(
+      at 70% 30%,
+      #183e61 10%,
+      #417056 20%
+    );
+  }
+  80% {
+    background-image: repeating-conic-gradient(
+      at 80% 20%,
+      #5e7041 10%,
+      #615418 20%
+    );
+  }
+  90% {
+    background-image: repeating-conic-gradient(
+      at 90% 10%,
+      #311861 10%,
+      #41705a 20%
+    );
+  }
+  100% {
+    background-image: repeating-conic-gradient(
+      at 100% 0%,
+      #705241 10%,
+      #611818 20%
+    );
+  }
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes container {
+  0% {
+    box-shadow: 1px 1px #ffffff;
+  }
+  25% {
+    box-shadow: 1px 1px 1px 1px #f82424;
+  }
+  50% {
+    box-shadow: 1px 1px 3px 3px #f86724;
+  }
+  75% {
+    box-shadow: 1px 1px 4px 5px #f88b24;
+  }
+  100% {
+    box-shadow: 3px 3px 3px 3px #f8c024,
+      1px 1px 3px 3px #c0f824;
+  }
+  from{
+    rotate: 0deg;
+  }
+  to{
+    rotate: 360deg;
+  }
+}
